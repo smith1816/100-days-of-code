@@ -1,3 +1,30 @@
 #basic hello world program
 print("hello world!")
 hello world!
+
+
+#python calculator using arthemic operators
+
+num1=input("enter a number")
+num2=input("enter a second number")
+#addition of the numbers
+sum=int(num1)+int(num2)
+#subtraction of the numbers
+min=int(num1)-int(num2)
+#multiplication of the numbers
+mul= int(num1)*int(num2)
+#division of the numbers
+div=int(num1)/int(num2)
+#printing the output
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))  
+print('The subtraction of {0} and {1} is {2}'.format(num1, num2, min))  
+print('The multiplication of {0} and {1} is {2}'.format(num1, num2, mul)) 
+print('The division of {0} and {1} is {2}'.format(num1, num2, div))  
+
+#execution
+enter a number 23
+enter a second number 899
+The sum of 23 and 899 is 922
+The subtraction of 23 and 899 is -876
+The multiplication of 23 and 899 is 20677
+The division of 23 and 899 is 0.025583982202447165
