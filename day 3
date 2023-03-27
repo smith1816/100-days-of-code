@@ -39,8 +39,40 @@ if result != -1:
 else:  
     print("Element is not present in list1")
     
-    
-    
+#concatenate two strings in Python
+    Python string is a collection of Unicode characters. Python provides many built-in functions for string manipulation. String concatenation is a process when one string is merged with another string. It can be done in the following ways.
+
+Using + operators
+Using join() method
+Using % method
+Using format() function
+
+
+#program
+# Python program to show  
+# string concatenation  
+  
+# Defining strings  
+str1="smith"
+str2="pandya"
+str3=str1 + str2
+print(str3)
+
+
+# Python program to  
+# string concatenation  
+  
+str1 = "Hello"  
+str2 = "JavaTpoint"  
+  
+# join() method is used to combine the strings  
+print("".join([str1, str2]))  
+  
+# join() method is used to combine  
+# the string with a separator Space(" ")  
+str3 = " ".join([str1, str2])  
+  
+print(str3)  
     
     
     
