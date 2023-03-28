@@ -1,1 +1,24 @@
+# Python program to  
+# string concatenation  
+  
+str1 = "Hello"  
+str2 = "JavaTpoint"  
+  
+# join() method is used to combine the strings  
+print("".join([str1, str2]))  
+  
+# join() method is used to combine  
+# the string with a separator Space(" ")  
+str3 = " ".join([str1, str2])  
+  
+print(str3)  
+
+# Python program to show  
+# string concatenation  
+  
+# Defining strings  
+str1="smith"
+str2="pandya"
+str3=str1 + str2
+print(str3)
 
