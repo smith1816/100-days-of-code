@@ -1,24 +1,94 @@
-# Python program to  
-# string concatenation  
-  
-str1 = "Hello"  
-str2 = "JavaTpoint"  
-  
-# join() method is used to combine the strings  
-print("".join([str1, str2]))  
-  
-# join() method is used to combine  
-# the string with a separator Space(" ")  
-str3 = " ".join([str1, str2])  
-  
-print(str3)  
+##Python program to copy all elements of one array into another array
+ALGORITHM:
+STEP 1: Declare and initialize an array.
+STEP 2: Declare another array of the same size as of the first one
+STEP 3: Loop through the first array from 0 to length of the array and copy an element from the first array to the second array that is arr1[i] = arr2[i].
+#PROGRAM
+#Initialize array     
+arr1 = [1, 2, 3, 4, 5];     
+     
+#Create another array arr2 with size of arr1    
+arr2 = [None] * len(arr1);    
+     
+#Copying all elements of one array into another    
+for i in range(0, len(arr1)):    
+    arr2[i] = arr1[i];     
+     
+#Displaying elements of array arr1     
+print("Elements of original array: ");    
+for i in range(0, len(arr1)):    
+   print(arr1[i]),    
+     
+print();    
+     
+#Displaying elements of array arr2     
+print("Elements of new array: ");    
+for i in range(0, len(arr2)):    
+   print(arr2[i]),  
+   
+   
+   ##Python program to sort the elements of an array in ascending order
+   ALGORITHM:
+STEP 1: Declare and initialize an array.
+STEP 2: Loop through the array and select an element.
+STEP 3: The inner loop will be used to compare the selected element from the outer loop with the rest of the elements of the array.
+STEP 4: If any element is less than the selected element then swap the values.
+STEP 5: Continue this process till entire array is sorted in ascending order.
 
-# Python program to show  
-# string concatenation  
-  
-# Defining strings  
-str1="smith"
-str2="pandya"
-str3=str1 + str2
-print(str3)
+#Initialize array     
+arr = [5, 2, 8, 7, 1];     
+temp = 0;    
+     
+#Displaying elements of original array    
+print("Elements of original array: ");    
+for i in range(0, len(arr)):    
+    print(arr[i], end=" ");    
+     
+#Sort the array in ascending order    
+for i in range(0, len(arr)):    
+    for j in range(i+1, len(arr)):    
+        if(arr[i] > arr[j]):    
+            temp = arr[i];    
+            arr[i] = arr[j];    
+            arr[j] = temp;    
+     
+print();    
+     
+#Displaying elements of the array after sorting    
+    
+print("Elements of array sorted in ascending order: ");    
+for i in range(0, len(arr)):    
+    print(arr[i], end=" ");    
+    
+ ##Python program to sort the elements of an array in Descending order
+#Initialize array     
+arr = [5, 2, 8, 7, 1];     
+temp = 0;    
+     
+#Displaying elements of original array    
+print("Elements of original array: ");    
+for i in range(0, len(arr)):    
+    print(arr[i], end=" ");    
+     
+#Sort the array in ascending order    
+for i in range(0, len(arr)):    
+    for j in range(i+1, len(arr)):    
+        if(arr[i] < arr[j]):    
+            temp = arr[i];    
+            arr[i] = arr[j];    
+            arr[j] = temp;    
+     
+print();    
+     
+#Displaying elements of the array after sorting    
+    
+print("Elements of array sorted in DESCENDING order: ");    
+for i in range(0, len(arr)):    
+    print(arr[i], end=" ");    
+
+
+
+
+
+
 
